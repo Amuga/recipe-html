@@ -1,23 +1,42 @@
 body {
   background-color:#dcacac
 }
+
 .main-content {
   margin: 0 auto;
   width: 60%;
   background-color: #fff;
+  padding-bottom: 20px;
 }
+
 .content {
-  margin: 20px;
+  margin: 0 20px;
 }
+
 .banner-image {
   width: 100%;
   height: auto;
 }
+
 .description {
   padding: 8px;
   background-color:lightgray
 }
+
 .pancake-images {
   display: flex;
   justify-content: space-between;
+  
+  img{
+    width: 49%;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+  }
 }
