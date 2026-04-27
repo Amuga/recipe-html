@@ -1,7 +1,12 @@
 body {
-  background-color:#dcacac
+  background-color:#dcacac;
+  font-family: Arial, sans-serif;
+  margin-top: 0;
 }
 
+.title {
+  color: darkred;
+}
 .main-content {
   margin: 0 auto;
   width: 60%;
