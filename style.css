@@ -1,0 +1,23 @@
+body {
+  background-color:#dcacac
+}
+.main-content {
+  margin: 0 auto;
+  width: 60%;
+  background-color: #fff;
+}
+.content {
+  margin: 20px;
+}
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+.description {
+  padding: 8px;
+  background-color:lightgray
+}
+.pancake-images {
+  display: flex;
+  justify-content: space-between;
+}
