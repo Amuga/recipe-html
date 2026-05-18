@@ -5,38 +5,46 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div class="main-content">
-  <img src="images/banner.png" alt="Pannkakor-banner" class="banner-image">
-   <div class="content">
-    <h2 class="title">Enkelt recept på pannkakor</h2>
-    <p class="description"> Gör traditionella tunna pannkakor med detta enkla och goda recept</p>
-     <h2>Ingredienser</h2>
-     <ul>
-       <li>2 1/2 dl vetemjöl</li>
-       <li>1/2 tsk salt</li>
-       <li>6 dl mjölk</li>
-       <li>3 ägg</li>
-       <li>smör (till stekning)</li>
-       <li>sylt, bär eller frukt (till servering)</li>
-     </ul>
-   <h2> Så här gör du</h2>
-      <ol>
-        <li>Blanda vetemjöl och salt i en stor skål.</li>
-        <li>Vispa i mjölken lite i taget tills du får en jämn smet.</li>
-        <li>Vispa i äggen tills smeten är slät.</li>
-        <li>Hetta upp en stekpanna på medelhög värme och smält en klick smör.</li>
-        <li>Häll en liten mängd smet i pannan och luta den så att smeten fördelas jämnt.</li>
-        <li>Stek pannkakan i 1-2 minuter tills den är gyllenbrun, vänd sedan och stek andra sidan.</li>
-        <li>Upprepa med resten av smeten, tillsätt mer smör i pannan vid behov.</li>
-        <li>Servera pannkakorna varma med sylt, bär eller frukt.</li>
-      </ol>
-      <h2>Severingsförslag</h2>
-      <div class="pancake-images">
-        <img src="images/p1.png" class="pancake-image" alt="Pannkaka 1">
-        <img src="images/p2.png" class="pancake-image" alt="Pannkaka 2">
-      </div>
-   </div>
+ <main class="main-content">
+    <img src="images/banner.png" alt="Pannkakor-banner" class="banner-image">
+    <article class="content" aria-labelledby="title">
+      <header>
+        <h2 id="title" class="title">Enkelt recept på pannkakor</h2>
+        <p class="description"> Gör traditionella tunna pannkakor med detta enkla och goda recept</p>
+      </header>
+      <section aria-describedby="ingredients">
+        <h1 id="ingredients">Ingredienser</h2>
+        <ul>
+          <li>2 1/2 dl vetemjöl</li>
+          <li>1/2 tsk salt</li>
+          <li>6 dl mjölk</li>
+          <li>3 ägg</li>
+          <li>smör (till stekning)</li>
+          <li>sylt, bär eller frukt (till servering)</li>
+        </ul>
+      </section>
+      <section aria-describedby="instructions">
+        <h2 id="instructions"> Så här gör du</h2>
+        <ol>
+          <li>Blanda vetemjöl och salt i en stor skål.</li>
+          <li>Vispa i mjölken lite i taget tills du får en jämn smet.</li>
+          <li>Vispa i äggen tills smeten är slät.</li>
+          <li>Hetta upp en stekpanna på medelhög värme och smält en klick smör.</li>
+          <li>Häll en liten mängd smet i pannan och luta den så att smeten fördelas jämnt.</li>
+          <li>Stek pannkakan i 1-2 minuter tills den är gyllenbrun, vänd sedan och stek andra sidan.</li>
+          <li>Upprepa med resten av smeten, tillsätt mer smör i pannan vid behov.</li>
+          <li>Servera pannkakorna varma med sylt, bär eller frukt.</li>
+        </ol>
+      </section>
+      <section aria-describedby="suggestions">
+        <h2 id="suggestions">Serveringsförslag</h2>
+        <div class="pancake-images">
+          <img src="images/p1.png" class="pancake-image" alt="Pannkaka with cream and berries">
+          <img src="images/p2.png" class="pancake-image" alt="Pannkaka with orange, honey and powdered sugar">
+        </div>
+      </section>
+   </article>
 
- </div>
+ </main>
 </body>
 </html>
