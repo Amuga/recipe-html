@@ -120,6 +120,8 @@ p {
       &:last-child {
         margin-bottom: 0;
       }
+      /* Setting gap:1rem on .gallery would be more efficient and not need these fixes 
+        or width adjustments but for the selectors exercise i'm using this */
     }
   }
 }
