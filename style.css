@@ -55,6 +55,7 @@ body {
   background-color: var(--bg-peach);
   font-family: Arial, sans-serif;
   margin-top: 0;
+  min-width: 300px;
 }
 
 h1, h2 {
@@ -83,10 +84,12 @@ a {
 
 nav {
   display: flex;
+  gap: 1rem;
   padding: 1rem;
   background-color: light-dark(var(--description-lightmode), var(--description-darkmode));
   justify-content: space-between;
   align-items: center;
+  font-size: clamp(0.9rem, 1vw, 1.2rem);
   ul {
     display: flex;
     align-items: center;
@@ -106,7 +109,8 @@ nav {
 
 /* Component styles */
 .container {
-  max-width: 800px;
+  max-width: clamp(300px, 70vw, 1200px);
+  overflow:auto;
   margin: 0 auto; 
   padding-bottom: 1rem;
 }
