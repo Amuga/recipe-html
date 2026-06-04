@@ -2,11 +2,30 @@ form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  padding-top: 2rem;
+  gap: var(--default-gap);
   margin: 0 auto;
 
-  input{
+  input, textarea, select {
     width: fit-content;
+    padding: 0.5rem;
+    border-radius: var(--br-soft);
+    border: 1px solid;
+    border-color: light-dark(var(--soft-gray), var(--dark-text));
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: var(--br-soft);
+    border: none;
+    background-color: cornflowerblue;
+    cursor: pointer;
   }
 }
 

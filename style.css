@@ -41,12 +41,15 @@ video {
   --bg-peach: #dcacac;
   --bg-white: #fff;
   --bg-dark: #2c2d47;
+  --soft-gray: oklch(74.123% 0.01 271.152);
+  --br-soft: 4px;
   --light-text: #000;
   --dark-text: #fff;
   --h1-lightmode: darkred;
   --h1-darkmode: lightcoral;
   --description-lightmode: lightgray;
   --description-darkmode: #3c3d57;
+  --default-gap: 1rem;
   color-scheme: dark light;
 }
 
@@ -94,7 +97,7 @@ nav {
     display: flex;
     align-items: center;
     padding-left: 0;
-    gap: 1rem;
+    gap: var(--default-gap);
     list-style: none;
     li {
       margin: 0;
@@ -112,7 +115,6 @@ nav {
   max-width: clamp(300px, 70vw, 1200px);
   overflow:auto;
   margin: 0 auto; 
-  padding-bottom: 1rem;
 }
 
 .title {
@@ -121,10 +123,7 @@ nav {
 
 .main-content {
   background-color: light-dark(var(--bg-white), var(--bg-dark));
-}
-
-.content {
-  margin: 0 1rem;
+  padding: 1rem;
 }
 
 .banner-image {
@@ -167,7 +166,7 @@ nav {
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  gap: var(--default-gap);
   list-style: none;
   padding-left: 0;
   margin-top: 1rem;
