@@ -102,9 +102,15 @@ nav {
     li {
       margin: 0;
 
-      &:hover {
+      .current-page {
+        pointer-events: none;
         text-decoration: underline;
-        font-weight: 500;
+      }
+
+      &:hover { 
+        a {
+          text-decoration: underline;
+        }
       }
     }
   }
