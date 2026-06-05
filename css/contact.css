@@ -12,6 +12,7 @@ form {
     border-radius: var(--br-soft);
     border: 1px solid;
     border-color: light-dark(var(--soft-gray), var(--dark-text));
+    max-width: 100%;
   }
 
   label {
@@ -26,6 +27,10 @@ form {
     border: none;
     background-color: cornflowerblue;
     cursor: pointer;
+  }
+
+  .form-group {
+    max-width: 100%;
   }
 }
 
