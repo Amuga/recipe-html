@@ -93,6 +93,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-size: clamp(0.9rem, 1vw, 1.2rem);
+  a {
+    padding: 0.5rem 0;
+  }
   ul {
     display: flex;
     align-items: center;
@@ -104,7 +107,7 @@ nav {
 
       .current-page {
         pointer-events: none;
-        text-decoration: underline;
+        border-bottom: 1px solid;
       }
 
       &:hover { 
